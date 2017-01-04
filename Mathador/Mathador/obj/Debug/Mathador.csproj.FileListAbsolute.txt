@@ -11,3 +11,16 @@ c:\users\roro\documents\visual studio 2013\Projects\Mathador\Mathador\obj\Debug\
 c:\users\roro\documents\visual studio 2013\Projects\Mathador\Mathador\obj\Debug\Mathador.csproj.GenerateResource.Cache
 c:\users\roro\documents\visual studio 2013\Projects\Mathador\Mathador\obj\Debug\Mathador.exe
 c:\users\roro\documents\visual studio 2013\Projects\Mathador\Mathador\obj\Debug\Mathador.pdb
+C:\Users\Roro\Documents\GitHub\Mathador\Mathador\Mathador\bin\Debug\Mathador.exe.config
+C:\Users\Roro\Documents\GitHub\Mathador\Mathador\Mathador\obj\Debug\Mathador.exe
+C:\Users\Roro\Documents\GitHub\Mathador\Mathador\Mathador\obj\Debug\Mathador.pdb
+C:\Users\Roro\Documents\GitHub\Mathador\Mathador\Mathador\bin\Debug\Mathador.exe
+C:\Users\Roro\Documents\GitHub\Mathador\Mathador\Mathador\bin\Debug\Mathador.pdb
+C:\Users\Roro\Documents\GitHub\Mathador\Mathador\Mathador\bin\Debug\MathadorLibrairie.dll
+C:\Users\Roro\Documents\GitHub\Mathador\Mathador\Mathador\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Roro\Documents\GitHub\Mathador\Mathador\Mathador\bin\Debug\MathadorLibrairie.pdb
+C:\Users\Roro\Documents\GitHub\Mathador\Mathador\Mathador\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Roro\Documents\GitHub\Mathador\Mathador\Mathador\obj\Debug\Mathador.csprojResolveAssemblyReference.cache
+C:\Users\Roro\Documents\GitHub\Mathador\Mathador\Mathador\obj\Debug\Mathador.MathadorGame.resources
+C:\Users\Roro\Documents\GitHub\Mathador\Mathador\Mathador\obj\Debug\Mathador.Properties.Resources.resources
+C:\Users\Roro\Documents\GitHub\Mathador\Mathador\Mathador\obj\Debug\Mathador.csproj.GenerateResource.Cache
