@@ -16,6 +16,14 @@ namespace Mathador
     {
         public int resultat;
         public bool plus = false;
+        public bool div = false;
+        public bool fois = false;
+        public bool moins = false;
+        public int round = 0;
+        public int ScoreRound;
+        int cible;
+        Button button2;
+        Button LastButton;
         public bool PremierNombreSelectione = false;
         public MathadorGame()
         {
@@ -34,10 +42,10 @@ namespace Mathador
 
         private void ButtonTestGenerer_Click(object sender, EventArgs e)
         {
-            /*
+            
             data datatest = new data();
 
-            datatest.Cible = 50;
+            datatest.Cible = 13;
             datatest.Nombre1 = 10;
             datatest.Nombre2 = 5;
             datatest.Nombre3 = 4;
@@ -45,17 +53,18 @@ namespace Mathador
             datatest.Nombre5 = 10;
             
            
-            string json = JsonConvert.SerializeObject(datatest);
+            string json1 = JsonConvert.SerializeObject(datatest);
             
-            System.IO.File.WriteAllText(@"C:/Users/Roro/Documents/Visual Studio 2013/Projects/Mathador/ressources/path.txt", json);
-            */
+            System.IO.File.WriteAllText(@"C:/Users/Roro/Documents/Visual Studio 2013/Projects/Mathador/ressources/path.txt", json1);
+            
             string text = System.IO.File.ReadAllText(@"C:/Users/Roro/Documents/Visual Studio 2013/Projects/Mathador/ressources/path.txt");
             
             data json = JsonConvert.DeserializeObject<data>(text);
            //Console.WriteLine("Cible: {0}, Nombre1: {1}", datatest.Cible, datatest.Nombre1);
-           
-          
-            
+
+
+            cible = json.Cible;
+            NombreCible.Text = cible.ToString();
             int[] tableau = new int[5];
 
             tableau[0] = json.Nombre1;
@@ -74,8 +83,7 @@ namespace Mathador
 
         private void BouttonNombre1_Click(object sender, EventArgs e)
         {
-            resultat = Int32.Parse(BouttonNombre1.Text);
-            PremierNombreSelectione = true;
+            Calcule(BouttonNombre1);
         }
 
         private void ButtonPlus_Click(object sender, EventArgs e)
@@ -85,17 +93,137 @@ namespace Mathador
 
         private void BouttonNombre2_Click(object sender, EventArgs e)
         {
+
+            Calcule(BouttonNombre2);
+        }
+
+        public void reset()
+        {
+          resultat = 0;
+        plus = false;
+        div = false;
+        fois = false;
+        moins = false;
+        round = 0;
+        ScoreRound = 0;
+        cible = 0;
+        button2 = null;
+        LastButton = null;
+        PremierNombreSelectione = false;
+
+        BouttonNombre1.Text = "";
+        BouttonNombre2.Text = "";
+        BouttonNombre3.Text = "";
+        BouttonNombre4.Text = "";
+        ButtonNombre5.Text = "";
+        NombreCible.Text = "0";
+        TextScore.Text = "Score";
+        }
+
+        public void Calcule(Button button1)
+        {
             if (PremierNombreSelectione == true)
             {
                 if (plus == true)
                 {
-                    resultat = resultat + Int32.Parse(BouttonNombre2.Text);
-                    BouttonNombre1.Text = resultat.ToString();
-                    BouttonNombre2.Text = "";
+                    resultat = resultat + Int32.Parse(button1.Text);
+                    button1.Text = resultat.ToString();
+                    button2.Text = "";
+                    ScoreRound += 1;
+                    LastButton = button1;
                     plus = false;
                 }
+                if (moins == true)
+                {
+                    resultat = resultat - Int32.Parse(button1.Text);
+                    button1.Text = resultat.ToString();
+                    button2.Text = "";
+                    ScoreRound += 2;
+                    LastButton = button1;
+                    moins = false;
+                }
+                if (div == true)
+                {
+                    resultat = resultat / Int32.Parse(button1.Text);
+                    button1.Text = resultat.ToString();
+                    button2.Text = "";
+                    ScoreRound += 3;
+                    LastButton = button1;
+                    div = false;
+                }
+                if (fois == true)
+                {
+                    resultat = resultat * Int32.Parse(button1.Text);
+                    button1.Text = resultat.ToString();
+                    button2.Text = "";
+                    ScoreRound += 1;
+                    LastButton = button1;
+                    fois = false;
+                }
+                PremierNombreSelectione = false;
+                round++;
             }
-            PremierNombreSelectione = false;
+            else
+            {
+                resultat = Int32.Parse(button1.Text);
+                button2 = button1;
+                PremierNombreSelectione = true;
+            }
+            if (round == 4)
+            {
+                TextScore.Text = "Terminer";
+                if (button1.Text == cible.ToString())
+                {
+                    TextScore.Text = "Mathador";
+                }
+            }
+        }
+
+        private void BouttonNombre3_Click(object sender, EventArgs e)
+        {
+            Calcule(BouttonNombre3);
+        }
+
+        private void BouttonNombre4_Click(object sender, EventArgs e)
+        {
+            Calcule(BouttonNombre4);
+        }
+
+        private void ButtonNombre5_Click(object sender, EventArgs e)
+        {
+            Calcule(ButtonNombre5);
+        }
+
+        private void ButtonMoins_Click(object sender, EventArgs e)
+        {
+            moins = true;
+        }
+
+        private void ButtonFois_Click(object sender, EventArgs e)
+        {
+            fois = true;
+        }
+
+        private void ButtonDiv_Click(object sender, EventArgs e)
+        {
+            div = true;
+        }
+
+        private void ButtonSuivant_Click(object sender, EventArgs e)
+        {
+            if (LastButton.Text == NombreCible.Text)
+            {
+                TextScore.Text = "Bien joué";
+            }
+            else
+            {
+                TextScore.Text = "perdu";
+            }
+        }
+
+        private void ButtonRetour_Click(object sender, EventArgs e)
+        {
+            reset();
         }
 
 

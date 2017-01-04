@@ -5,10 +5,3 @@ c:\Users\Roro\documents\visual studio 2013\Projects\Mathador\MathadorLibrairie\b
 c:\Users\Roro\documents\visual studio 2013\Projects\Mathador\MathadorLibrairie\obj\Debug\MathadorLibrairie.csprojResolveAssemblyReference.cache
 c:\Users\Roro\documents\visual studio 2013\Projects\Mathador\MathadorLibrairie\obj\Debug\MathadorLibrairie.dll
 c:\Users\Roro\documents\visual studio 2013\Projects\Mathador\MathadorLibrairie\obj\Debug\MathadorLibrairie.pdb
-C:\Users\Roro\Documents\GitHub\Mathador\Mathador\MathadorLibrairie\bin\Debug\MathadorLibrairie.dll
-C:\Users\Roro\Documents\GitHub\Mathador\Mathador\MathadorLibrairie\bin\Debug\MathadorLibrairie.pdb
-C:\Users\Roro\Documents\GitHub\Mathador\Mathador\MathadorLibrairie\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Roro\Documents\GitHub\Mathador\Mathador\MathadorLibrairie\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Roro\Documents\GitHub\Mathador\Mathador\MathadorLibrairie\obj\Debug\MathadorLibrairie.csprojResolveAssemblyReference.cache
-C:\Users\Roro\Documents\GitHub\Mathador\Mathador\MathadorLibrairie\obj\Debug\MathadorLibrairie.dll
-C:\Users\Roro\Documents\GitHub\Mathador\Mathador\MathadorLibrairie\obj\Debug\MathadorLibrairie.pdb
