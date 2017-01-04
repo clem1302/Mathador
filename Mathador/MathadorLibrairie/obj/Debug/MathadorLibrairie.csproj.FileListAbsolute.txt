@@ -1,0 +1,7 @@
+c:\Users\Roro\documents\visual studio 2013\Projects\Mathador\MathadorLibrairie\bin\Debug\MathadorLibrairie.dll
+c:\Users\Roro\documents\visual studio 2013\Projects\Mathador\MathadorLibrairie\bin\Debug\MathadorLibrairie.pdb
+c:\Users\Roro\documents\visual studio 2013\Projects\Mathador\MathadorLibrairie\bin\Debug\Newtonsoft.Json.dll
+c:\Users\Roro\documents\visual studio 2013\Projects\Mathador\MathadorLibrairie\bin\Debug\Newtonsoft.Json.xml
+c:\Users\Roro\documents\visual studio 2013\Projects\Mathador\MathadorLibrairie\obj\Debug\MathadorLibrairie.csprojResolveAssemblyReference.cache
+c:\Users\Roro\documents\visual studio 2013\Projects\Mathador\MathadorLibrairie\obj\Debug\MathadorLibrairie.dll
+c:\Users\Roro\documents\visual studio 2013\Projects\Mathador\MathadorLibrairie\obj\Debug\MathadorLibrairie.pdb

@@ -55,6 +55,7 @@
             this.BouttonNombre1.Size = new System.Drawing.Size(75, 23);
             this.BouttonNombre1.TabIndex = 0;
             this.BouttonNombre1.UseVisualStyleBackColor = true;
+            this.BouttonNombre1.Click += new System.EventHandler(this.BouttonNombre1_Click);
             // 
             // BouttonNombre2
             // 
@@ -63,6 +64,7 @@
             this.BouttonNombre2.Size = new System.Drawing.Size(75, 23);
             this.BouttonNombre2.TabIndex = 1;
             this.BouttonNombre2.UseVisualStyleBackColor = true;
+            this.BouttonNombre2.Click += new System.EventHandler(this.BouttonNombre2_Click);
             // 
             // BouttonNombre3
             // 
@@ -168,6 +170,7 @@
             this.ButtonPlus.TabIndex = 13;
             this.ButtonPlus.Text = "+";
             this.ButtonPlus.UseVisualStyleBackColor = true;
+            this.ButtonPlus.Click += new System.EventHandler(this.ButtonPlus_Click);
             // 
             // ButtonMoins
             // 
@@ -204,6 +207,7 @@
             this.ButtonTestGenerer.TabIndex = 17;
             this.ButtonTestGenerer.Text = "Generer";
             this.ButtonTestGenerer.UseVisualStyleBackColor = true;
+            this.ButtonTestGenerer.Click += new System.EventHandler(this.ButtonTestGenerer_Click);
             // 
             // MathadorGame
             // 
@@ -230,6 +234,7 @@
             this.Controls.Add(this.BouttonNombre1);
             this.Name = "MathadorGame";
             this.Text = "MathadorGame";
+            this.Load += new System.EventHandler(this.MathadorGame_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mathador", "Mathador\Mathador.csproj", "{BC0DF06B-6AF8-4B17-8C15-4F448B759A16}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathadorLibrairie", "MathadorLibrairie\MathadorLibrairie.csproj", "{FC97348B-3C29-4BBF-9693-4E8A4FF0181E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BC0DF06B-6AF8-4B17-8C15-4F448B759A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC0DF06B-6AF8-4B17-8C15-4F448B759A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC0DF06B-6AF8-4B17-8C15-4F448B759A16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC97348B-3C29-4BBF-9693-4E8A4FF0181E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC97348B-3C29-4BBF-9693-4E8A4FF0181E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC97348B-3C29-4BBF-9693-4E8A4FF0181E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC97348B-3C29-4BBF-9693-4E8A4FF0181E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
