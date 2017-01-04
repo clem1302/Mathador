@@ -251,3 +251,9 @@ paket-files/
 .idea/
 *.sln.iml
 *.cache
+*.cache
+Mathador/Mathador/bin/Debug/Mathador.vshost.exe
+Mathador/Mathador/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+*.cache
+Mathador/Mathador/obj/Debug/Mathador.csproj.FileListAbsolute.txt
+Mathador/MathadorLibrairie/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache

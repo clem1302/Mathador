@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace MathadorLibrairie
 {
-    public class Class1
+    public class sqliteClass
     {
+        SQLiteConnection.CreateFile("MyDatabase.sqlite");
     }
 }
