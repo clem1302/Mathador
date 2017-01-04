@@ -42,22 +42,10 @@ namespace Mathador
 
         private void ButtonTestGenerer_Click(object sender, EventArgs e)
         {
-            
-            data datatest = new data();
 
-            datatest.Cible = 13;
-            datatest.Nombre1 = 10;
-            datatest.Nombre2 = 5;
-            datatest.Nombre3 = 4;
-            datatest.Nombre4 = 12;
-            datatest.Nombre5 = 10;
-            
-           
-            string json1 = JsonConvert.SerializeObject(datatest);
-            
-            System.IO.File.WriteAllText(@"C:/Users/Roro/Documents/Visual Studio 2013/Projects/Mathador/ressources/path.txt", json1);
-            
-            string text = System.IO.File.ReadAllText(@"C:/Users/Roro/Documents/Visual Studio 2013/Projects/Mathador/ressources/path.txt");
+            Generator();
+
+            string text = System.IO.File.ReadAllText(@"D:\École\Ingesup\C#\Projet\Mathador\Gene.db");
             
             data json = JsonConvert.DeserializeObject<data>(text);
            //Console.WriteLine("Cible: {0}, Nombre1: {1}", datatest.Cible, datatest.Nombre1);
@@ -178,6 +166,40 @@ namespace Mathador
                 }
             }
         }
+
+        public static void Generator()
+        {
+            int nb1, nb2, nb3, nb4, nb5, cible;
+
+            Random random = new Random();
+
+            nb1 = random.Next(1*20);
+            nb2 = random.Next(1*20);
+            nb3 = random.Next(1*12);
+            nb4 = random.Next(1*12);
+            nb5 = random.Next(1*12);
+
+            cible = nb1 + nb2 - nb3 * nb4 / nb5;
+
+
+            data datatest = new data();
+
+            datatest.Cible = cible;
+            datatest.Nombre1 = nb1;
+            datatest.Nombre2 = nb2;
+            datatest.Nombre3 = nb3;
+            datatest.Nombre4 = nb4;
+            datatest.Nombre5 = nb5;
+
+
+            string json = JsonConvert.SerializeObject(datatest);
+
+            System.IO.File.WriteAllText(@"D:\École\Ingesup\C#\Projet\Mathador\Gene.db", json);
+
+        }
+
+
+
 
         private void BouttonNombre3_Click(object sender, EventArgs e)
         {
